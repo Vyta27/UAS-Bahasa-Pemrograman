@@ -7,7 +7,7 @@ class data, class view, dan class process)
 • Program menapilkan hasil (dapat berupa table view)
 
 
-class Mahasiswa:
+    class Mahasiswa:
     def __init__(self, nama, nim, tugas, uts, uas):
         self.nama = nama
         self.nim = nim
