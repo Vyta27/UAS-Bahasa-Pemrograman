@@ -6,6 +6,7 @@ class data, class view, dan class process)
 • Tambahkan validasi input (dapat menggunakan konsep eksepsi)
 • Program menapilkan hasil (dapat berupa table view)
 
+
 class Mahasiswa:
     def __init__(self, nama, nim, tugas, uts, uas):
         self.nama = nama
