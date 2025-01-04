@@ -19,11 +19,12 @@ class data, class view, dan class process)
     def hitung_nilai_akhir(self):
         return (self.tugas * 0.30) + (self.uts * 0.35) + (self.uas * 0.35)
 
-- __init__ Method: Ini adalah konstruktor yang dipanggil saat objek Mahasiswa dibuat. Ia menerima parameter untuk nama, NIM, dan nilai tugas, UTS, dan UAS. Nilai akhir dihitung dengan memanggil metode hitung_nilai_akhir.
-- hitung_nilai_akhir Method: Metode ini menghitung nilai akhir mahasiswa berdasarkan bobot yang telah ditentukan:
-- Tugas: 30%
-- UTS: 35%
-- UAS: 35%
+    - __init__ Method: Ini adalah konstruktor yang dipanggil saat objek Mahasiswa dibuat. Ia menerima parameter untuk nama, NIM, dan nilai tugas, UTS, dan UAS. Nilai akhir dihitung dengan memanggil metode         
+      hitung_nilai_akhir.
+    - hitung_nilai_akhir Method: Metode ini menghitung nilai akhir mahasiswa berdasarkan bobot yang telah ditentukan:
+    - Tugas: 30%
+    - UTS: 35%
+    - UAS: 35%
 
     class ProsesMahasiswa:
     def __init__(self):
