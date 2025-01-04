@@ -73,3 +73,55 @@ Buatlah program sederhana dengan ketentuan:
                    ))
                print("=" * 83)
 
+3. Tampilan KelasMahasiswa
+- Tujuan: Menampilkan data mahasiswa dalam format yang teratur.
+- Metode:
+  - tampilkan_data: Mengambil list mahasiswa dan mencetak informasi mereka dalam format tabel.
+  - Menggunakan format untuk menyusun output agar terlihat rapi, dengan kolom untuk nama, NIM, nilai tugas, UTS, UAS, dan nilai akhir.
+
+              def validasi_input(nilai):
+           if not isinstance(nilai, (int, float)):
+               raise ValueError("Nilai harus berupa angka.")
+           if nilai < 0 or nilai > 100:
+               raise ValueError("Nilai harus berada dalam rentang 0-100.")
+
+4. Fungsi Validasi Input
+- Tujuan: Memastikan bahwa input nilai yang diberikan valid (angka dan dalam rentang 0-100).
+- Logika:
+  - Memeriksa apakah nilai adalah angka (int atau float).
+  - Memeriksa apakah nilai berada dalam rentang yang valid (0 hingga 100). Jika tidak, akan mengeluarkan ValueError.
+
+       def main():
+    proses = ProsesMahasiswa()
+    while True:
+        try:
+            nama = input("Masukkan Nama: ")
+            nim = input("Masukkan NIM: ")
+            tugas = float(input("Nilai Tugas: "))
+            validasi_input(tugas)
+            uts = float(input("Nilai UTS: "))
+            validasi_input(uts)
+            uas = float(input("Nilai UAS: "))
+            validasi_input(uas)
+
+            proses.tambah_mahasiswa(nama, nim, tugas, uts, uas)
+
+            lanjut = input("Tambah data (y/t)? ")
+            if lanjut.lower() == 't':
+                break
+        except ValueError as e:
+            print(f"Error: {e}")
+
+    # Tampilkan semua data
+    view = ViewMahasiswa()
+    view.tampilkan_data(proses.get_mahasiswa())
+
+5. Fungsi Main
+- Tujuan: Mengelola alur program.
+- Logika:
+  - Membuat objek ProsesMahasiswa untuk mengelola data mahasiswa.
+  - Menggunakan loop while untuk terus meminta input pengguna sampai mereka memilih untuk berhenti.
+  - Menggunakan try-except untuk menangani kesalahan input. Jika terjadi kesalahan, pesan kesalahan akan ditampilkan.
+  - Setelah semua data dimasukkan, fungsi tampilkan_data dari ViewMahasiswa dipanggil untuk menampilkan hasil.
+
+
