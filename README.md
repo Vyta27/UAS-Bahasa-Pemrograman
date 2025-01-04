@@ -53,23 +53,23 @@ Buatlah program sederhana dengan ketentuan:
   - tambah_mahasiswa: Menerima input data mahasiswa, membuat objek Mahasiswa, dan menambahkannya ke mahasiswa_list.
   - get_mahasiswa: Mengembalikan daftar mahasiswa yang telah ditambahkan.
 
-       class ViewMahasiswa:
-    @staticmethod
-    def tampilkan_data(mahasiswa_list):
-        print("\nDaftar Nilai Mahasiswa")
-        print("=" * 83)
-        print("{:<20} {:<15} {:<10} {:<10} {:<10} {:<10}".format(
-            "Nama", "NIM", "Tugas", "UTS", "UAS", "Nilai Akhir"))
-        print("-" * 83)
+              class ViewMahasiswa:
+           @staticmethod
+           def tampilkan_data(mahasiswa_list):
+               print("\nDaftar Nilai Mahasiswa")
+               print("=" * 83)
+               print("{:<20} {:<15} {:<10} {:<10} {:<10} {:<10}".format(
+                   "Nama", "NIM", "Tugas", "UTS", "UAS", "Nilai Akhir"))
+               print("-" * 83)
 
-        for mhs in mahasiswa_list:
-            print("{:<20} {:<15} {:<10} {:<10} {:<10} {:<10.2f}".format(
-                mhs.nama,
-                mhs.nim,
-                mhs.tugas,
-                mhs.uts,
-                mhs.uas,
-                mhs.nilai_akhir
-            ))
-        print("=" * 83)
+               for mhs in mahasiswa_list:
+                   print("{:<20} {:<15} {:<10} {:<10} {:<10} {:<10.2f}".format(
+                       mhs.nama,
+                       mhs.nim,
+                       mhs.tugas,
+                       mhs.uts,
+                       mhs.uas,
+                       mhs.nilai_akhir
+                   ))
+               print("=" * 83)
 
