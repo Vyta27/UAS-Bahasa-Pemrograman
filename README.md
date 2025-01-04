@@ -7,8 +7,8 @@ class data, class view, dan class process)
 • Program menapilkan hasil (dapat berupa table view)
 
 
-    class Mahasiswa:
-    def __init__(self, nama, nim, tugas, uts, uas):
+        class Mahasiswa:
+        def __init__(self, nama, nim, tugas, uts, uas):
         self.nama = nama
         self.nim = nim
         self.tugas = tugas
@@ -16,7 +16,7 @@ class data, class view, dan class process)
         self.uas = uas
         self.nilai_akhir = self.hitung_nilai_akhir()
         
-    def hitung_nilai_akhir(self):
+        def hitung_nilai_akhir(self):
         return (self.tugas * 0.30) + (self.uts * 0.35) + (self.uas * 0.35)
 
  
