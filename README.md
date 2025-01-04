@@ -32,3 +32,44 @@ Buatlah program sederhana dengan ketentuan:
 - Metode:
   - __init__: Konstruktor yang menginisialisasi atribut dan menghitung nilai akhir menggunakan metode hitung_nilai_akhir.
   - hitung_nilai_akhir: Menghitung nilai akhir dengan rumus: nilai_akhir=(tugas *0,30 ) + ( uts *0,35 ) + ( uas *0,35 )
+
+       class ProsesMahasiswa:
+    def __init__(self):
+        self.mahasiswa_list = []
+
+    def tambah_mahasiswa(self, nama, nim, tugas, uts, uas):
+        mahasiswa = Mahasiswa(nama, nim, tugas, uts, uas)
+        self.mahasiswa_list.append(mahasiswa)
+
+    def get_mahasiswa(self):
+        return self.mahasiswa_list
+
+2. Class ProsesMahasiswa
+- Tujuan: Mengelola daftar mahasiswa.
+- Atribut:
+  - mahasiswa_list: List untuk menyimpan objek mahasiswa.
+- Metode:
+  - __init__: Konstruktor yang menginisialisasi mahasiswa_list sebagai list kosong.
+  - tambah_mahasiswa: Menerima input data mahasiswa, membuat objek Mahasiswa, dan menambahkannya ke mahasiswa_list.
+  - get_mahasiswa: Mengembalikan daftar mahasiswa yang telah ditambahkan.
+
+       class ViewMahasiswa:
+    @staticmethod
+    def tampilkan_data(mahasiswa_list):
+        print("\nDaftar Nilai Mahasiswa")
+        print("=" * 83)
+        print("{:<20} {:<15} {:<10} {:<10} {:<10} {:<10}".format(
+            "Nama", "NIM", "Tugas", "UTS", "UAS", "Nilai Akhir"))
+        print("-" * 83)
+
+        for mhs in mahasiswa_list:
+            print("{:<20} {:<15} {:<10} {:<10} {:<10} {:<10.2f}".format(
+                mhs.nama,
+                mhs.nim,
+                mhs.tugas,
+                mhs.uts,
+                mhs.uas,
+                mhs.nilai_akhir
+            ))
+        print("=" * 83)
+
