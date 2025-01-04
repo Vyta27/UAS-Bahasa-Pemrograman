@@ -91,30 +91,29 @@ Buatlah program sederhana dengan ketentuan:
   - Memeriksa apakah nilai adalah angka (int atau float).
   - Memeriksa apakah nilai berada dalam rentang yang valid (0 hingga 100). Jika tidak, akan mengeluarkan ValueError.
 
-       def main():
-    proses = ProsesMahasiswa()
-    while True:
-        try:
-            nama = input("Masukkan Nama: ")
-            nim = input("Masukkan NIM: ")
-            tugas = float(input("Nilai Tugas: "))
-            validasi_input(tugas)
-            uts = float(input("Nilai UTS: "))
-            validasi_input(uts)
-            uas = float(input("Nilai UAS: "))
-            validasi_input(uas)
+              def main():
+           proses = ProsesMahasiswa()
+           while True:
+               try:
+                   nama = input("Masukkan Nama: ")
+                   nim = input("Masukkan NIM: ")
+                   tugas = float(input("Nilai Tugas: "))
+                   validasi_input(tugas)
+                   uts = float(input("Nilai UTS: "))
+                   validasi_input(uts)
+                   uas = float(input("Nilai UAS: "))
+                   validasi_input(uas)
 
-            proses.tambah_mahasiswa(nama, nim, tugas, uts, uas)
+                   proses.tambah_mahasiswa(nama, nim, tugas, uts, uas)
 
-            lanjut = input("Tambah data (y/t)? ")
-            if lanjut.lower() == 't':
-                break
-        except ValueError as e:
-            print(f"Error: {e}")
-
-    # Tampilkan semua data
-    view = ViewMahasiswa()
-    view.tampilkan_data(proses.get_mahasiswa())
+                   lanjut = input("Tambah data (y/t)? ")
+                   if lanjut.lower() == 't':
+                       break
+               except ValueError as e:
+                   print(f"Error: {e}")
+           #Tampilkan semua data
+           view = ViewMahasiswa()
+           view.tampilkan_data(proses.get_mahasiswa())
 
 5. Fungsi Main
 - Tujuan: Mengelola alur program.
