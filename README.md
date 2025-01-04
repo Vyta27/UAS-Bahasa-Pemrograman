@@ -112,7 +112,7 @@ Buatlah program sederhana dengan ketentuan:
         except ValueError as e:
             print(f"Error: {e}")
 
-    # Tampilkan semua data
+    #Tampilkan semua data
     view = ViewMahasiswa()
     view.tampilkan_data(proses.get_mahasiswa())
 
