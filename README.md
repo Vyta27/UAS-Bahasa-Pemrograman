@@ -1,8 +1,13 @@
 # UAS-Bahasa-Pemrograman
+
 Buatlah program sederhana dengan ketentuan:
+
 • Program harus dibuat dengan konsep modular dan OOP (pisahkan class data, class view, dan class process)
+
 • Program harus meminta input dari pengguna
+
 • Tambahkan validasi input (dapat menggunakan konsep eksepsi)
+
 • Program menapilkan hasil (dapat berupa table view)
 
 ![Screenshot 2025-01-04 230555](https://github.com/user-attachments/assets/6034268d-348b-4a05-a5b6-720e76cfb147)
