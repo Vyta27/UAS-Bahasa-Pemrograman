@@ -27,6 +27,7 @@ class data, class view, dan class process)
 - UTS: 35%
 - UAS: 35%
 
+
     class ProsesMahasiswa:
     def __init__(self):
         self.mahasiswa_list = []
@@ -37,6 +38,7 @@ class data, class view, dan class process)
 
     def get_mahasiswa(self):
         return self.mahasiswa_list
+  
 
 - __init__ Method: Konstruktor ini menginisialisasi daftar kosong mahasiswa_list untuk menyimpan objek Mahasiswa.
 - tambah_mahasiswa Method: Metode ini menerima data mahasiswa, membuat objek Mahasiswa, dan menambahkannya ke dalam mahasiswa_list.
