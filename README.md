@@ -6,7 +6,6 @@ Buatlah program sederhana dengan ketentuan:
 • Program menapilkan hasil (dapat berupa table view)
 
 ![Screenshot 2025-01-04 230555](https://github.com/user-attachments/assets/6034268d-348b-4a05-a5b6-720e76cfb147)
-![Screenshot 2025-01-04 230524](https://github.com/user-attachments/assets/981316cc-c428-4831-9469-2d393b2adfd4)
 
        class Mahasiswa:
     def __init__(self, nama, nim, tugas, uts, uas):
@@ -123,4 +122,5 @@ Buatlah program sederhana dengan ketentuan:
   - Menggunakan try-except untuk menangani kesalahan input. Jika terjadi kesalahan, pesan kesalahan akan ditampilkan.
   - Setelah semua data dimasukkan, fungsi tampilkan_data dari ViewMahasiswa dipanggil untuk menampilkan hasil.
 
-
+# Run
+![Screenshot 2025-01-04 230524](https://github.com/user-attachments/assets/981316cc-c428-4831-9469-2d393b2adfd4)
