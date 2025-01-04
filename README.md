@@ -33,16 +33,16 @@ Buatlah program sederhana dengan ketentuan:
   - __init__: Konstruktor yang menginisialisasi atribut dan menghitung nilai akhir menggunakan metode hitung_nilai_akhir.
   - hitung_nilai_akhir: Menghitung nilai akhir dengan rumus: nilai_akhir=(tugas *0,30 ) + ( uts *0,35 ) + ( uas *0,35 )
 
-       class ProsesMahasiswa:
-    def __init__(self):
+              class ProsesMahasiswa:
+           def __init__(self):
         self.mahasiswa_list = []
 
-    def tambah_mahasiswa(self, nama, nim, tugas, uts, uas):
-        mahasiswa = Mahasiswa(nama, nim, tugas, uts, uas)
-        self.mahasiswa_list.append(mahasiswa)
+           def tambah_mahasiswa(self, nama, nim, tugas, uts, uas):
+               mahasiswa = Mahasiswa(nama, nim, tugas, uts, uas)
+               self.mahasiswa_list.append(mahasiswa)
 
-    def get_mahasiswa(self):
-        return self.mahasiswa_list
+           def get_mahasiswa(self):
+               return self.mahasiswa_list
 
 2. Class ProsesMahasiswa
 - Tujuan: Mengelola daftar mahasiswa.
